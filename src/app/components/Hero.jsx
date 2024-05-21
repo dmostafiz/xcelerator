@@ -84,13 +84,8 @@ export function Hero(props) {
                 >
                   {HOME.HERO.VIDEO_TITLE}
                 </Text>
-                <Box mt="12">
-                  <Image
-                    height={617}
-                    width={778}
-                    src="/img/hero-video.png"
-                    alt="Product"
-                  />
+                <Box mt="12" w={'full'} bg={'red'}>
+                  <iframe width={'100%'} height="400" src="https://www.youtube.com/embed/RJABu2DxBs0?si=u7mjqRa567ZhoiX2&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </Box>
               </VStack>
               <Text textStyle="heading4" py="8" textAlign="center">

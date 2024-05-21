@@ -12,7 +12,7 @@ import Cookies from 'js-cookie'
 import Axios from "./Helpers/Axios";
 import { useEffect, useState } from "react";
 
-export default function Home({params}) {
+export default function Home({ params }) {
 
 
   const sponsorModal = useDisclosure()
@@ -35,7 +35,7 @@ export default function Home({params}) {
         verifySponsor(sponsorUsername)
       }
     }
-  },[])
+  }, [])
 
   const handleVerify = async () => {
     if (!username) {
@@ -91,8 +91,6 @@ export default function Home({params}) {
       <ProductSection />
       <MetalSection />
       <Footer />
-
-
 
       <Modal isOpen={sponsorModal.isOpen} onClose={sponsorModal.onClose}>
         <ModalOverlay />

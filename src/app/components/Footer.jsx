@@ -1,7 +1,6 @@
 import { Box, HStack, Stack, Text, VStack } from "@chakra-ui/react";
-export interface FooterProps {}
 
-export function Footer(props: FooterProps) {
+export function Footer(props) {
   const {} = props;
 
   return (

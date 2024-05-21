@@ -1,10 +1,9 @@
-import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 
-import { ChakraClientProvider } from "@/providers/ChakraClientProvider";
-import theme from "@/theme";
+import { ChakraClientProvider } from "../providers/ChakraClientProvider";
+import theme from "../theme";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Xcelerator",
   description: "Xcelerator App",
 };
@@ -12,9 +11,7 @@ export const metadata: Metadata = {
 const montserrat = Montserrat({ subsets: ["latin"] });
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body className={montserrat.className}>

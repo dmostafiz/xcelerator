@@ -16,11 +16,14 @@ import {
 import Image from "next/image";
 import { HOME } from "../constant";
 import { Field, Form, Formik } from "formik";
+import countries from "../Helpers/countries"
+import useRegister from '../Hooks/useRegister'
 
-export interface HeroProps {}
+export function Hero(props) {
+  const { onOpen } = props;
 
-export function Hero(props: HeroProps) {
-  const {} = props;
+  const { handleSubmit } = useRegister()
+
 
   return (
     <>
@@ -135,13 +138,13 @@ export function Hero(props: HeroProps) {
                   country: "",
                 }}
                 onSubmit={(values) => {
-                  console.log(values);
+                  handleSubmit(onOpen, values)
                 }}
               >
                 <Form>
                   <VStack spacing="6" mt="5">
                     <Field name="firstName">
-                      {({ field }: any) => (
+                      {({ field }) => (
                         <FormControl>
                           <FormLabel textStyle="form-label">
                             First Name
@@ -156,7 +159,7 @@ export function Hero(props: HeroProps) {
                       )}
                     </Field>
                     <Field name="lastName">
-                      {({ field }: any) => (
+                      {({ field }) => (
                         <FormControl>
                           <FormLabel textStyle="form-label">
                             Last Name
@@ -171,7 +174,7 @@ export function Hero(props: HeroProps) {
                       )}
                     </Field>
                     <Field name="email">
-                      {({ field }: any) => (
+                      {({ field }) => (
                         <FormControl>
                           <FormLabel textStyle="form-label"> Email</FormLabel>
                           <Input
@@ -185,7 +188,7 @@ export function Hero(props: HeroProps) {
                       )}
                     </Field>
                     <Field name="country">
-                      {({ field }: any) => (
+                      {({ field }) => (
                         <FormControl>
                           <FormLabel textStyle="form-label"> Country</FormLabel>
                           <Select
@@ -197,9 +200,9 @@ export function Hero(props: HeroProps) {
                             color="black.300"
                             h="60px"
                           >
-                            <option value="usa">USA</option>
-                            <option value="uk">UK</option>
-                            <option value="canada">Canada</option>
+                            {countries.map(country => {
+                              return <option key={country} value={country}>{country}</option>
+                            })}
                           </Select>
                         </FormControl>
                       )}

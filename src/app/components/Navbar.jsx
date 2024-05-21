@@ -14,21 +14,8 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 
-interface Link {
-  ICON: string;
-  LINK: string;
-}
 
-interface Navigation {
-  LOGO: string;
-  LINKS: Link[];
-}
-
-interface NavbarProps {
-  navigation: Navigation;
-}
-
-const Navbar: React.FC<NavbarProps> = ({ navigation }) => {
+const Navbar = ({ navigation }) => {
   return (
     <Stack bg="black" boxShadow="xl" pos="sticky" zIndex="100" top="0">
       <Container maxW="1545px" px="0" w="full">

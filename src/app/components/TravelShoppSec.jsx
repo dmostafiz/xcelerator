@@ -1,9 +1,8 @@
 import { Box, Container, Flex, HStack, Text, VStack } from "@chakra-ui/react";
 import { HOME } from "../constant";
 import Image from "next/image";
-export interface TravelShoppSecProps {}
 
-export function TravelShoppSec(props: TravelShoppSecProps) {
+export function TravelShoppSec(props) {
   const {} = props;
   const travelItems = HOME.TRAVEL.ITEMS;
 

@@ -10,9 +10,8 @@ import {
 import React from "react";
 import { HOME } from "../constant";
 import Image from "next/image";
-export interface ProductSectionProps {}
 
-export function ProductSection(props: ProductSectionProps) {
+export function ProductSection(props) {
   const {} = props;
 
   return (

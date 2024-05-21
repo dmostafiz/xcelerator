@@ -1,9 +1,7 @@
 import { Box, Container, Flex, Text, VStack } from "@chakra-ui/react";
 import { HOME } from "../constant";
 
-export interface MetalSectionProps {}
-
-export function MetalSection(props: MetalSectionProps) {
+export function MetalSection(props) {
   const {} = props;
 
   return (

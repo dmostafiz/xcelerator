@@ -120,8 +120,8 @@ export default function Home({params}) {
         <Flex gap={2} alignItems='center'>
           <Avatar size='sm' src={sponsor?.avatar} />
           <Box lineHeight={1}>
-            <Text mb={0} lineHeight={1} fontSize={'9px'} color='gray.500'>Referred by</Text>
-            <Text as={'span'} fontSize={'14px'}>{sponsor.full_name}</Text>
+            <Text mb={0} lineHeight={1} fontSize={'9px'} color='gray.700'>Referred by</Text>
+            <Text as={'span'} fontSize={'14px'} color='gray.500'>{sponsor.full_name}</Text>
           </Box>
 
         </Flex>

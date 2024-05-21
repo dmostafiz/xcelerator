@@ -31,10 +31,6 @@ const theme = extendTheme(
       },
     },
 
-    config: {
-      useSystemColorMode: false,
-      initialColorMode: "light",
-    },
   },
   withDefaultColorScheme({ colorScheme: "primary" })
 );

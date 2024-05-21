@@ -35,12 +35,9 @@ const baseStyle = definePartsStyle({
   field: {
     height: "60px",
     borderRadius: "10px",
-    color: "black.300",
-    background: "#E2E2E2",
     fontSize: "15px",
     fontWeight: "normal",
     _placeholder: {
-      color: "gray",
       fontWeight: "normal",
       fontSize: "18px",
     },

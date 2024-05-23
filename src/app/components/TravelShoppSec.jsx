@@ -51,17 +51,17 @@ export function TravelShoppSec(props) {
               </Text>
               <Box>
                 {travelItems.map((item, index) => (
-                  <HStack key={index}>
+                  <Flex mb={{base:2, lg: 0}} gap={2.5} justify={'left'} alignItems={'baseline'} key={index}>
                     <Image
                       src="/icons/checkbox.svg"
                       height={23}
                       width={23}
                       alt="icon"
                     />
-                    <Text textStyle="text3" color="yellow.200">
+                    <Text lineHeight={{base:8, lg: 10}} textStyle="text3" color="yellow.200">
                       {item.TEXT}
                     </Text>
-                  </HStack>
+                  </Flex>
                 ))}
               </Box>
 

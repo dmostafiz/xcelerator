@@ -49,17 +49,17 @@ export function MetalSection(props) {
 
           <Box>
             {HOME.METALS.ITEMS.map((item, index) => (
-              <HStack key={index}>
+              <Flex mb={{ base: 2, lg: 0 }} gap={2.5} justify={'left'} alignItems={'baseline'} key={index}>
                 <Image
                   src="/icons/checkbox.svg"
                   height={23}
                   width={23}
                   alt="icon"
                 />
-                <Text textStyle="text2" color="white">
+                <Text lineHeight={{ base: 8, lg: 10 }} textStyle="text2" color="yellow.500">
                   {item}
                 </Text>
-              </HStack>
+              </Flex>
             ))}
           </Box>
         </VStack>

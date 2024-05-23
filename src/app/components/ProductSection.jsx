@@ -81,19 +81,19 @@ export function ProductSection(props) {
               {HOME.PRODUCTS.DESCRIPTION}
             </Text> */}
 
-            <Box>
+            <Box textAlign={'left'}>
               {HOME.PRODUCTS.ITEMS.map((item, index) => (
-                <HStack key={index}>
+                <Flex mb={{ base: 2, lg: 0 }} gap={2.5} justify={'left'} alignItems={'baseline'} key={index}>
                   <Image
                     src="/icons/checkbox.svg"
                     height={23}
                     width={23}
                     alt="icon"
                   />
-                  <Text textStyle="text2" color="black.300">
+                  <Text lineHeight={{ base: 8, lg: 10 }} color="black.300" textStyle="text2">
                     {item}
                   </Text>
-                </HStack>
+                </Flex>
               ))}
             </Box>
 

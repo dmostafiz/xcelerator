@@ -32,7 +32,7 @@ const theme = extendTheme(
     },
 
   },
-  withDefaultColorScheme({ colorScheme: "primary" })
+  // withDefaultColorScheme({ colorScheme: "primary" })
 );
 
 export default theme;

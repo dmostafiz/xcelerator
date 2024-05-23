@@ -1,7 +1,7 @@
 const styles = {
   global: {
     body: {
-      // background: "kula_blue",
+      background: "white",
     },
   },
 };

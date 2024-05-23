@@ -21,7 +21,7 @@ export function Footer(props) {
             md: "1135px",
           }}
         >
-          Xcelerate©2024
+          Xcelerate © 2022 - 2024
         </Text>
       </Stack>
     </>

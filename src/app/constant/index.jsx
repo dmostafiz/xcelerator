@@ -85,7 +85,7 @@ export const HOME = {
     ITEMS: [
       'Fractional gold bars',
       'Gold and Silver rounds',
-      'Graded Americal Silver Eagles',
+      'Graded American Silver Eagles',
       'Silver bars as small as 1/2 OZ',
       'Buy gold and silver like the wealthy'
     ],

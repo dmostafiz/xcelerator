@@ -64,14 +64,30 @@ export const HOME = {
       "Nutritional Supplements, personal care, skin care  and home care products are a TRILLION dollar opportunity. ",
     DESCRIPTION:
       "Free Retail Store Get paid to share our brand Get paid ever Friday Work your own hours Includes free training",
+
+    ITEMS: [
+      'Free retail store',
+      'Get paid to share our brand',
+      'Get paid every Friday',
+      'Work your own hours',
+      'Included free Training'
+    ],
   },
   METALS: {
     METAL_TEXT: "our precious metals",
-    TITLE: "Get paid everytime your customers become members",
+    TITLE: "The value of the dollar is shrinking but gold and silver continue to grow",
 
     METAL_DESCRIPTION:
-      "We buy gold, silver and other precious metals in bulk and pass the savings on to you and your customers. Silver is predicted double in the next 36 - 48 months",
+      "We buy gold, silver and other precious metals in bulk and pass the savings on to you and your customers. Silver is predicted to double in the next 36 - 48 months",
     SUB_DESCRIPTION:
       "Fractional gold bars as small as 1/2 gram Gold and Silver rounds at wholesale pricing Graded American Silver Eagles MS70 Silver Bars as small as 1/2 ounce",
+
+    ITEMS: [
+      'Fractional gold bars',
+      'Gold and Silver rounds',
+      'Graded Americal Silver Eagles',
+      'Silver bars as small as 1/2 OZ',
+      'Buy gold and silver like the wealthy'
+    ],
   },
 };

@@ -17,7 +17,7 @@ import Image from "next/image";
 
 const Navbar = ({ navigation }) => {
   return (
-    <Stack bg="black" boxShadow="xl" pos="sticky" zIndex="100" top="0">
+    <Stack bg="black" boxShadow="xl" zIndex="100" top="0">
       <Container maxW="1545px" px="0" w="full">
         <HStack
           p="5"
@@ -43,7 +43,7 @@ const Navbar = ({ navigation }) => {
             />
           </Box>
 
-          <Flex p="4">
+          {/* <Flex p="4">
             {navigation.LINKS.map((link, index) => (
               <HStack
                 key={index}
@@ -66,7 +66,7 @@ const Navbar = ({ navigation }) => {
                 </Link>
               </HStack>
             ))}
-          </Flex>
+          </Flex> */}
         </HStack>
       </Container>
     </Stack>

@@ -68,7 +68,7 @@ export function Hero(props) {
                 >
                   {HOME.HERO.HEADING1}
                 </Text>
-                <Text textStyle="heading3" lineHeight="0.9">
+                <Text textStyle="heading3" lineHeight="0.9" color={'white'}>
                   {HOME.HERO.HEADING2}
                 </Text>
               </Stack>
@@ -88,7 +88,7 @@ export function Hero(props) {
                   <iframe width={'100%'} height="400" src="https://www.youtube.com/embed/RJABu2DxBs0?si=u7mjqRa567ZhoiX2&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </Box>
               </VStack>
-              <Text textStyle="heading4" py="8" textAlign="center">
+              <Text textStyle="heading4" py="8" textAlign="center" color={'gray.300'}>
                 {HOME.HERO.DESCRIPTION}
               </Text>
             </Box>

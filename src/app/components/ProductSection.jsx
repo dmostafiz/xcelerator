@@ -12,7 +12,7 @@ import { HOME } from "../constant";
 import Image from "next/image";
 
 export function ProductSection(props) {
-  const {} = props;
+  const { } = props;
 
   return (
     <Box
@@ -77,9 +77,25 @@ export function ProductSection(props) {
               {HOME.PRODUCTS.TITLE}
             </Text>
 
-            <Text color="black.300" textStyle="text2">
+            {/* <Text color="black.300" textStyle="text2">
               {HOME.PRODUCTS.DESCRIPTION}
-            </Text>
+            </Text> */}
+
+            <Box>
+              {HOME.PRODUCTS.ITEMS.map((item, index) => (
+                <HStack key={index}>
+                  <Image
+                    src="/icons/checkbox.svg"
+                    height={23}
+                    width={23}
+                    alt="icon"
+                  />
+                  <Text textStyle="text2" color="black.300">
+                    {item}
+                  </Text>
+                </HStack>
+              ))}
+            </Box>
 
             <Box>
               <Button

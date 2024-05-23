@@ -1,11 +1,12 @@
-import { Box, Container, Flex, Text, VStack } from "@chakra-ui/react";
+import { Box, Container, Flex, HStack, Image, Text, VStack } from "@chakra-ui/react";
 import { HOME } from "../constant";
 
 export function MetalSection(props) {
-  const {} = props;
+  const { } = props;
 
   return (
     <Box
+      bg={'black'}
       bgImage="url('/img/metal-bg-img.png')"
       minH={{
         base: "750px",
@@ -42,9 +43,25 @@ export function MetalSection(props) {
           <Text textStyle="text2" color="yellow.200">
             {HOME.METALS.METAL_DESCRIPTION}
           </Text>
-          <Text textStyle="text2" color="white">
+          {/* <Text textStyle="text2" color="white">
             {HOME.METALS.SUB_DESCRIPTION}
-          </Text>
+          </Text> */}
+
+          <Box>
+            {HOME.METALS.ITEMS.map((item, index) => (
+              <HStack key={index}>
+                <Image
+                  src="/icons/checkbox.svg"
+                  height={23}
+                  width={23}
+                  alt="icon"
+                />
+                <Text textStyle="text2" color="white">
+                  {item}
+                </Text>
+              </HStack>
+            ))}
+          </Box>
         </VStack>
       </Container>
     </Box>

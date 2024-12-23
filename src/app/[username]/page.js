@@ -17,9 +17,6 @@ export default function Page({params}) {
 
         if (params?.username) {
             handleVerify(params?.username)
-            setTimeout(() => {
-                window.location.href = `/`
-            }, 500)
         }
 
     }, [params?.username])

@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "server": "cd ../xcelerate_new/server && npm run dev",
+    "serve": "concurrently \"npm run dev\" \"npm run server\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -15,6 +17,7 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "axios": "^1.7.1",
+    "concurrently": "^9.1.0",
     "formik": "^2.4.6",
     "framer-motion": "^11.1.7",
     "js-cookie": "^3.0.5",

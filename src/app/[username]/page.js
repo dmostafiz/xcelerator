@@ -1,12 +1,10 @@
 "use client"
-
 import Axios from '../Helpers/Axios'
 import { Center, Spinner, useToast } from '@chakra-ui/react'
 import Cookies from 'js-cookie'
-// import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
 
-export default function Page({params}) {
+export default function Page({ params }) {
 
     // const router = useRouter()
     const toast = useToast()

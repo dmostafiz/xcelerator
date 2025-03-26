@@ -38,7 +38,7 @@ export function Hero(props) {
         bgPos="center"
         bgRepeat="no-repeat"
       >
-        <Container maxW="1520px" h="full">
+        <Container maxW="1300px" h="full">
           <HStack
             w="full"
             justify="space-between"

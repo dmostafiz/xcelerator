@@ -18,7 +18,7 @@ import Image from "next/image";
 const Navbar = ({ navigation }) => {
   return (
     <Stack bg="black" boxShadow="xl" zIndex="100" top="0">
-      <Container maxW="1545px" px="0" w="full">
+      <Container maxW="1300px" px="0" w="full">
         <HStack
           p="5"
           h={{

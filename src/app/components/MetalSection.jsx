@@ -7,7 +7,10 @@ export function MetalSection(props) {
   return (
     <Box
       bg={'black'}
-      bgImage="url('/img/metal-bg-img.png')"
+      bgImage={{
+        base: 'none',
+        md: "url('/img/metal-bg-img.png')"
+      }}
       minH={{
         base: "750px",
         md: "841px",
@@ -17,7 +20,7 @@ export function MetalSection(props) {
       bgPos="center"
       bgRepeat="no-repeat"
     >
-      <Container maxW="1520px" h="full">
+      <Container maxW="1300px" h="full">
         <VStack gap="8" maxW="572px" alignItems="flex-start" py={112}>
           <Flex
             bg="yellow.200"

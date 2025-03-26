@@ -21,7 +21,7 @@ export function MetalSection(props) {
       bgRepeat="no-repeat"
     >
       <Container maxW="1300px" h="full">
-        <VStack gap="8" maxW="572px" alignItems="flex-start" py={112}>
+        <VStack gap="8" maxW="572px" alignItems="flex-start" py={112} >
           <Flex
             bg="yellow.200"
             color="black.300"
@@ -36,14 +36,15 @@ export function MetalSection(props) {
             alignItems="center"
             textStyle="text-bg"
             textTransform="uppercase"
+            
           >
             {HOME.METALS.METAL_TEXT}
           </Flex>
-          <Text textStyle="heading" color="white">
+          <Text textStyle="heading" color="white" >
             {HOME.METALS.TITLE}
           </Text>
 
-          <Text textStyle="text2" color="yellow.200">
+          <Text textStyle="text2" color="yellow.200" >
             {HOME.METALS.METAL_DESCRIPTION}
           </Text>
           {/* <Text textStyle="text2" color="white">
@@ -59,7 +60,7 @@ export function MetalSection(props) {
                   width={23}
                   alt="icon"
                 />
-                <Text lineHeight={{ base: 8, lg: 10 }} textStyle="text2" color="yellow.500">
+                <Text lineHeight={{ base: 8, lg: 10 }} fontSize={{base: '17px', md: '20px'}} textStyle="text2" color="yellow.500">
                   {item}
                 </Text>
               </Flex>

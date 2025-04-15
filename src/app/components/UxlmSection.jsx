@@ -7,6 +7,33 @@ export default function UxlmSection() {
     return (
         <Box py={20} bg={'gray.900'}>
             <Container maxW="1300px" h="full">
+                <Flex direction="column" align="center" gap={1} mb={20}>
+                    <Text
+                        fontSize={{ base: 'xl', md: '2xl' }}
+                        fontWeight="semibold"
+                        textAlign="center"
+                        color="white"
+                    >
+                        We are about to launch our new e-learning platform
+                    </Text>
+
+                    <Text
+                        textAlign="center"
+                        fontWeight="black"
+                        fontSize={{ base: 'xl', md: '4xl' }}
+                        color="#FCB10A"
+                        mb={3}
+                        maxW={{ lg: '65%' }}
+                    >
+                        We need your help to get the word out by posting our content.
+                    </Text>
+
+                    <Box textAlign="center" mb={10}>
+                        <Text fontSize="2xl" color="white">
+                            This &quot;Done For You&quot; system pays you EVERY FRIDAY!
+                        </Text>
+                    </Box>
+                </Flex>
                 {/* Section 1 */}
                 <Flex
                     w="full"

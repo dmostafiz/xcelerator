@@ -11,6 +11,7 @@ import { HOME } from "./constant";
 import Cookies from 'js-cookie'
 import Axios from "./Helpers/Axios";
 import { useEffect, useState } from "react";
+import UxlmSection from "./components/UxlmSection";
 
 export default function Home({ params }) {
 
@@ -89,7 +90,7 @@ export default function Home({ params }) {
       <Hero onOpen={sponsorModal.onOpen} />
       <TravelShoppSec />
       <ProductSection />
-      <MetalSection />
+      <UxlmSection />
       <Footer />
 
       <Modal isOpen={sponsorModal.isOpen} onClose={sponsorModal.onClose}>

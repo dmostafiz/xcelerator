@@ -84,12 +84,14 @@ export function Hero(props) {
                 >
                   {HOME.HERO.VIDEO_TITLE}
                 </Text>
-                <Box mt="12" w={'full'} bg={'red'}>
+                <Box mt="12" w={'full'}>
                   {/* <iframe width={'100%'} height="400" src="https://www.youtube.com/embed/RJABu2DxBs0?si=u7mjqRa567ZhoiX2&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
-                  <video width="100%" height="400" controls>
-                    <source src="https://shop-xcelerate.s3.us-west-1.amazonaws.com/WhatsApp+Video+2025-04-15+at+22.34.30.mp4" type="video/mp4" />
+                  <Box rounded={'2xl'} overflow={'hidden'}>
+                    <video width="100%" height="400" controls>
+                      <source src="https://shop-xcelerate.s3.us-west-1.amazonaws.com/WhatsApp+Video+2025-04-15+at+22.34.30.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
-                  </video>
+                    </video>
+                  </Box>
                 </Box>
               </VStack>
               <Text textStyle="heading4" py="8" textAlign="center" color={'gray.300'}>

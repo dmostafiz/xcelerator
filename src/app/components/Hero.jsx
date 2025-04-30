@@ -78,9 +78,10 @@ export function Hero(props) {
                 </Text>
                 <Text
                   color="yellow.200"
-                  fontSize="68px"
+                  fontSize="58px"
                   fontWeight="bold"
                   lineHeight="1"
+                  textAlign={'center'}
                 >
                   {HOME.HERO.VIDEO_TITLE}
                 </Text>

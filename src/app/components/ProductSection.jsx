@@ -12,7 +12,7 @@ import { HOME } from "../constant";
 import Image from "next/image";
 
 export function ProductSection(props) {
-  const { } = props;
+  const {} = props;
 
   return (
     <Box
@@ -26,7 +26,7 @@ export function ProductSection(props) {
       bgPos="center"
       bgRepeat="no-repeat"
     >
-      <Container maxW="1300px" h="full">
+      <Container maxW="1520px" h="full">
         <HStack
           w="full"
           justify="space-between"
@@ -77,25 +77,9 @@ export function ProductSection(props) {
               {HOME.PRODUCTS.TITLE}
             </Text>
 
-            {/* <Text color="black.300" textStyle="text2">
+            <Text color="black.300" textStyle="text2">
               {HOME.PRODUCTS.DESCRIPTION}
-            </Text> */}
-
-            <Box textAlign={'left'}>
-              {HOME.PRODUCTS.ITEMS.map((item, index) => (
-                <Flex mb={{ base: 2, lg: 0 }} gap={2.5} justify={'left'} alignItems={'baseline'} key={index}>
-                  <Image
-                    src="/icons/checkbox.svg"
-                    height={23}
-                    width={23}
-                    alt="icon"
-                  />
-                  <Text lineHeight={{ base: 8, lg: 10 }} color="black.300" textStyle="text2">
-                    {item}
-                  </Text>
-                </Flex>
-              ))}
-            </Box>
+            </Text>
 
             <Box>
               <Button
